@@ -1,4 +1,4 @@
-var CACHE_NAME = 'cache-v1';
+var CACHE_NAME = 'cache-v2';
 var urlsToCache = [
     '/simple-service-worker/',
     '/simple-service-worker/index.html',
@@ -32,7 +32,7 @@ self.addEventListener('fetch', function (event) {
 });
 
 self.addEventListener('activate', function (event) {
-    var cacheWhiteList = ['cache-v1'];
+    var cacheWhiteList = ['cache-v2'];
     event.waitUntil(
         caches.keys().then(function (cacheNames) {
             return Promise.all(
