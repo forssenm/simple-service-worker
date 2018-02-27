@@ -3,20 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Service Worker Demo</title>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('./sw.js').then(function (registration) {
-                    //Registration was successful
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function (err) {
-                    //Registration failed
-                    console.log('ServiceWorker registration failed', err);
-                })
-            })
-        }
-    </script>
-    <script src="scripts/main.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
@@ -24,5 +10,6 @@
         <h1>Service Worker Demo</h1>
         <img src="content/squeed.jpg">
     </div>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

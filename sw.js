@@ -1,9 +1,9 @@
 var CACHE_NAME = 'cache-v1';
 var urlsToCache = [
-    './',
-    './styles/main.css',
-    './scripts/main.js',
-    './content/squeed.jpg'
+    '/simple-service-worker/index.html',
+    '/simple-service-worker/styles/main.css',
+    '/simple-service-worker/scripts/main.js',
+    '/simple-service-worker/content/squeed.jpg'
 ];
 
 self.addEventListener('install', function (event) {
